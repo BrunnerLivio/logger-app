@@ -1,0 +1,27 @@
+{
+  "moduleFileExtensions": [
+    "ts",
+    "tsx",
+    "js",
+    "json"
+  ],
+  "transform": {
+    "^.+\\.ts$": "ts-jest",
+    "^.+\\.tsx?$": "ts-jest"
+  },
+  "setupFiles": [
+    "<rootDir>/node_modules/reflect-metadata/Reflect.js"
+  ],
+  "testRegex": "/src/.*\\.(test|spec).(ts|tsx|js)$",
+  "collectCoverageFrom": [
+    "src/**/*.{js,jsx,tsx,ts}",
+    "!**/node_modules/**",
+    "!**/vendor/**"
+  ],
+  "coverageReporters": [
+    "json",
+    "lcov"
+  ],
+  "coverageDirectory": "./coverage",
+  "testEnvironment": "node"
+}
